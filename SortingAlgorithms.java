@@ -3,8 +3,21 @@ public class SortingAlgorithms {
     public static void main(String[] args) {
     }
 
+
+    //Mahmoud Tarek starts Coding ==>
     public void SelectionSort(int[] arr){
+      int cur_max;
+      for(int i=0; i< arr.length; i++){
+        cur_max = i;
+        for(int j=i; j<arr.length; j++)
+          cur_max = arr[j] > arr[cur_max] ? j : cur_max;
+        int temp = arr[cur_max];
+        cur_max = arr[j];
+        arr[j] = temp;
+      }
     }
+    //<== DONE
+
 
     public void InsertioSort(int[] arr){
       int i,j,key;
