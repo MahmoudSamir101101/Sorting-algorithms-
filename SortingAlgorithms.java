@@ -32,7 +32,28 @@ public class SortingAlgorithms {
           i++;
           }
     }
-    public void BubbleSort(int[] arr){
+    // Mohamed Helal started here 
+    public void BubbleSort(int[] list){
+         
+        boolean needPass = true ;
+        
+        for (int i = 1 ; i < list.length && needPass ; i++)
+        {
+            needPass = false ; 
+            for (int j = 0; j < list.length - i ; j++ )
+            {
+                if (list[j] > list[j+1])
+                {
+                  int temp = list[j];
+                  list[j] = list[j+1];
+                  list[j+1] = temp ;
+                  needPass = true ; 
+   
+                }
+            }   
+ 
+        }
+
     }
     //Follow the same structure when adding extra method
     }
